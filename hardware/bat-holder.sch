@@ -1,0 +1,536 @@
+EESchema Schematic File Version 4
+LIBS:bat-holder-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Battery Holder"
+Date "2018-10-24"
+Rev "1.0"
+Comp "Tinkerforge GmbH"
+Comment1 "Licensed under CERN OHL v.1.1"
+Comment2 "Copyright (©) 2018, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tinkerforge:AAT4685-1 U101
+U 1 1 5BD06032
+P 5000 2250
+F 0 "U101" H 5000 2825 50  0000 C CNN
+F 1 "AAT4685-1" H 5000 2734 50  0000 C CNN
+F 2 "TDFN33-12" H 5600 2600 50  0001 C CNN
+F 3 "" H 5600 2600 50  0001 C CNN
+	1    5000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:Rs R101
+U 1 1 5BD06147
+P 4450 2100
+F 0 "R101" V 4400 2100 25  0000 C CNN
+F 1 "340k" V 4450 2100 25  0000 C CNN
+F 2 "R0603F" H 4450 2100 60  0001 C CNN
+F 3 "" H 4450 2100 60  0000 C CNN
+	1    4450 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:Rs R102
+U 1 1 5BD063E2
+P 4450 2550
+F 0 "R102" V 4400 2550 25  0000 C CNN
+F 1 "100k" V 4450 2550 25  0000 C CNN
+F 2 "R0603F" H 4450 2550 60  0001 C CNN
+F 3 "" H 4450 2550 60  0000 C CNN
+	1    4450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:Rs R105
+U 1 1 5BD06434
+P 4600 2550
+F 0 "R105" V 4550 2550 25  0000 C CNN
+F 1 "16.5k" V 4600 2550 25  0000 C CNN
+F 2 "R0603F" H 4600 2550 60  0001 C CNN
+F 3 "" H 4600 2550 60  0000 C CNN
+	1    4600 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0101
+U 1 1 5BD064E2
+P 5000 2850
+F 0 "#PWR0101" H 5000 2600 50  0001 C CNN
+F 1 "GND" H 5000 2700 50  0000 C CNN
+F 2 "" H 5000 2850 50  0000 C CNN
+F 3 "" H 5000 2850 50  0000 C CNN
+	1    5000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0102
+U 1 1 5BD06512
+P 4600 2850
+F 0 "#PWR0102" H 4600 2600 50  0001 C CNN
+F 1 "GND" H 4600 2700 50  0000 C CNN
+F 2 "" H 4600 2850 50  0000 C CNN
+F 3 "" H 4600 2850 50  0000 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2750 4850 2800
+Wire Wire Line
+	4850 2800 4950 2800
+Wire Wire Line
+	5150 2800 5150 2750
+Connection ~ 5000 2800
+Wire Wire Line
+	5000 2800 5050 2800
+Wire Wire Line
+	5000 2850 5000 2800
+Wire Wire Line
+	4600 2850 4600 2650
+$Comp
+L tinkerforge:GND #PWR0103
+U 1 1 5BD065D5
+P 4450 2850
+F 0 "#PWR0103" H 4450 2600 50  0001 C CNN
+F 1 "GND" H 4450 2700 50  0000 C CNN
+F 2 "" H 4450 2850 50  0000 C CNN
+F 3 "" H 4450 2850 50  0000 C CNN
+	1    4450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2850 4450 2650
+Wire Wire Line
+	4650 2400 4600 2400
+Wire Wire Line
+	4600 2400 4600 2450
+Wire Wire Line
+	4650 2300 4450 2300
+Wire Wire Line
+	4450 2300 4450 2450
+Wire Wire Line
+	4450 2300 4450 2200
+Connection ~ 4450 2300
+Wire Wire Line
+	4650 2000 4550 2000
+Wire Wire Line
+	4450 1900 4450 2000
+Wire Wire Line
+	4450 1900 4650 1900
+Connection ~ 4450 2000
+Wire Wire Line
+	4650 2200 4550 2200
+Wire Wire Line
+	4550 2200 4550 2000
+Connection ~ 4550 2000
+Wire Wire Line
+	4550 2000 4450 2000
+NoConn ~ 5350 2200
+NoConn ~ 5350 2300
+Text Notes 4450 2800 1    50   ~ 0
+4.4V
+Text Notes 4700 2800 1    50   ~ 0
+1.8A
+Wire Wire Line
+	5050 2750 5050 2800
+Connection ~ 5050 2800
+Wire Wire Line
+	5050 2800 5150 2800
+Wire Wire Line
+	5400 2000 5350 2000
+Wire Wire Line
+	5350 1900 5400 1900
+Wire Wire Line
+	5400 1900 5400 2000
+Wire Wire Line
+	4950 2750 4950 2800
+Connection ~ 4950 2800
+Wire Wire Line
+	4950 2800 5000 2800
+$Comp
+L tinkerforge:C C101
+U 1 1 5BD11CF3
+P 4250 2100
+F 0 "C101" H 4050 2200 50  0000 L CNN
+F 1 "1µF" H 4050 2000 50  0000 L CNN
+F 2 "C0603F" H 4380 2009 60  0001 L CNN
+F 3 "" H 4250 2100 60  0000 C CNN
+	1    4250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:C C103
+U 1 1 5BD11EA5
+P 5550 2100
+F 0 "C103" H 5600 2200 50  0000 L CNN
+F 1 "1µF" H 5600 2000 50  0000 L CNN
+F 2 "C0603F" H 5680 2009 60  0001 L CNN
+F 3 "" H 5550 2100 60  0000 C CNN
+	1    5550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0104
+U 1 1 5BD11FB9
+P 4250 2850
+F 0 "#PWR0104" H 4250 2600 50  0001 C CNN
+F 1 "GND" H 4250 2700 50  0000 C CNN
+F 2 "" H 4250 2850 50  0000 C CNN
+F 3 "" H 4250 2850 50  0000 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0105
+U 1 1 5BD11FD8
+P 5550 2850
+F 0 "#PWR0105" H 5550 2600 50  0001 C CNN
+F 1 "GND" H 5550 2700 50  0000 C CNN
+F 2 "" H 5550 2850 50  0000 C CNN
+F 3 "" H 5550 2850 50  0000 C CNN
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2850 5550 2300
+Wire Wire Line
+	5400 1900 5550 1900
+Connection ~ 5400 1900
+Wire Wire Line
+	4250 1900 4450 1900
+Connection ~ 4450 1900
+Wire Wire Line
+	4250 2850 4250 2300
+$Comp
+L tinkerforge:AAT4685-1 U102
+U 1 1 5BD155A2
+P 5000 3900
+F 0 "U102" H 5000 4475 50  0000 C CNN
+F 1 "AAT4685-1" H 5000 4384 50  0000 C CNN
+F 2 "TDFN33-12" H 5600 4250 50  0001 C CNN
+F 3 "" H 5600 4250 50  0001 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:Rs R103
+U 1 1 5BD155A8
+P 4450 3750
+F 0 "R103" V 4400 3750 25  0000 C CNN
+F 1 "340k" V 4450 3750 25  0000 C CNN
+F 2 "R0603F" H 4450 3750 60  0001 C CNN
+F 3 "" H 4450 3750 60  0000 C CNN
+	1    4450 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:Rs R104
+U 1 1 5BD155AE
+P 4450 4200
+F 0 "R104" V 4400 4200 25  0000 C CNN
+F 1 "100k" V 4450 4200 25  0000 C CNN
+F 2 "R0603F" H 4450 4200 60  0001 C CNN
+F 3 "" H 4450 4200 60  0000 C CNN
+	1    4450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:Rs R106
+U 1 1 5BD155B4
+P 4600 4200
+F 0 "R106" V 4550 4200 25  0000 C CNN
+F 1 "16.5k" V 4600 4200 25  0000 C CNN
+F 2 "R0603F" H 4600 4200 60  0001 C CNN
+F 3 "" H 4600 4200 60  0000 C CNN
+	1    4600 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0106
+U 1 1 5BD155BA
+P 5000 4500
+F 0 "#PWR0106" H 5000 4250 50  0001 C CNN
+F 1 "GND" H 5000 4350 50  0000 C CNN
+F 2 "" H 5000 4500 50  0000 C CNN
+F 3 "" H 5000 4500 50  0000 C CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0107
+U 1 1 5BD155C0
+P 4600 4500
+F 0 "#PWR0107" H 4600 4250 50  0001 C CNN
+F 1 "GND" H 4600 4350 50  0000 C CNN
+F 2 "" H 4600 4500 50  0000 C CNN
+F 3 "" H 4600 4500 50  0000 C CNN
+	1    4600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4400 4850 4450
+Wire Wire Line
+	4850 4450 4950 4450
+Wire Wire Line
+	5150 4450 5150 4400
+Connection ~ 5000 4450
+Wire Wire Line
+	5000 4450 5050 4450
+Wire Wire Line
+	5000 4500 5000 4450
+Wire Wire Line
+	4600 4500 4600 4300
+$Comp
+L tinkerforge:GND #PWR0108
+U 1 1 5BD155CD
+P 4450 4500
+F 0 "#PWR0108" H 4450 4250 50  0001 C CNN
+F 1 "GND" H 4450 4350 50  0000 C CNN
+F 2 "" H 4450 4500 50  0000 C CNN
+F 3 "" H 4450 4500 50  0000 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4500 4450 4300
+Wire Wire Line
+	4650 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4100
+Wire Wire Line
+	4650 3950 4450 3950
+Wire Wire Line
+	4450 3950 4450 4100
+Wire Wire Line
+	4450 3950 4450 3850
+Connection ~ 4450 3950
+Wire Wire Line
+	4650 3650 4550 3650
+Wire Wire Line
+	4450 3550 4450 3650
+Wire Wire Line
+	4450 3550 4650 3550
+Connection ~ 4450 3650
+Wire Wire Line
+	4650 3850 4550 3850
+Wire Wire Line
+	4550 3850 4550 3650
+Connection ~ 4550 3650
+Wire Wire Line
+	4550 3650 4450 3650
+NoConn ~ 5350 3850
+NoConn ~ 5350 3950
+Text Notes 4450 4450 1    50   ~ 0
+4.4V
+Text Notes 4700 4450 1    50   ~ 0
+1.8A
+Wire Wire Line
+	5050 4400 5050 4450
+Connection ~ 5050 4450
+Wire Wire Line
+	5050 4450 5150 4450
+Wire Wire Line
+	5400 3650 5350 3650
+Wire Wire Line
+	5350 3550 5400 3550
+Wire Wire Line
+	5400 3550 5400 3650
+Wire Wire Line
+	4950 4400 4950 4450
+Connection ~ 4950 4450
+Wire Wire Line
+	4950 4450 5000 4450
+$Comp
+L tinkerforge:C C102
+U 1 1 5BD155EF
+P 4250 3750
+F 0 "C102" H 4050 3850 50  0000 L CNN
+F 1 "1µF" H 4050 3650 50  0000 L CNN
+F 2 "C0603F" H 4380 3659 60  0001 L CNN
+F 3 "" H 4250 3750 60  0000 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:C C104
+U 1 1 5BD155F5
+P 5550 3750
+F 0 "C104" H 5600 3850 50  0000 L CNN
+F 1 "1µF" H 5600 3650 50  0000 L CNN
+F 2 "C0603F" H 5680 3659 60  0001 L CNN
+F 3 "" H 5550 3750 60  0000 C CNN
+	1    5550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0109
+U 1 1 5BD155FB
+P 4250 4500
+F 0 "#PWR0109" H 4250 4250 50  0001 C CNN
+F 1 "GND" H 4250 4350 50  0000 C CNN
+F 2 "" H 4250 4500 50  0000 C CNN
+F 3 "" H 4250 4500 50  0000 C CNN
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0110
+U 1 1 5BD15601
+P 5550 4500
+F 0 "#PWR0110" H 5550 4250 50  0001 C CNN
+F 1 "GND" H 5550 4350 50  0000 C CNN
+F 2 "" H 5550 4500 50  0000 C CNN
+F 3 "" H 5550 4500 50  0000 C CNN
+	1    5550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4500 5550 3950
+Wire Wire Line
+	5400 3550 5550 3550
+Connection ~ 5400 3550
+Wire Wire Line
+	4250 3550 4450 3550
+Connection ~ 4450 3550
+Wire Wire Line
+	4250 4500 4250 3950
+$Comp
+L tinkerforge:CONN_3 K101
+U 1 1 5BD17464
+P 6500 3200
+F 0 "K101" H 6628 3228 50  0000 L CNN
+F 1 "BAT" H 6628 3144 40  0000 L CNN
+F 2 "kicad-libraries:JST-PH-3-THT" H 6500 3200 60  0001 C CNN
+F 3 "" H 6500 3200 60  0000 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0111
+U 1 1 5BD1760B
+P 6150 3400
+F 0 "#PWR0111" H 6150 3150 50  0001 C CNN
+F 1 "GND" H 6150 3250 50  0000 C CNN
+F 2 "" H 6150 3400 50  0000 C CNN
+F 3 "" H 6150 3400 50  0000 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3400 6150 3300
+Wire Wire Line
+	5550 3550 6000 3550
+Wire Wire Line
+	6000 3550 6000 3100
+Wire Wire Line
+	6000 3100 6150 3100
+Connection ~ 5550 3550
+Wire Wire Line
+	6000 3100 6000 2800
+Wire Wire Line
+	6000 1900 5550 1900
+Connection ~ 6000 3100
+Connection ~ 5550 1900
+$Comp
+L tinkerforge:BAT_1049P J101
+U 1 1 5BD24463
+P 3550 3250
+F 0 "J101" H 3828 3271 50  0000 L CNN
+F 1 "BAT_1049P" H 3828 3180 50  0000 L CNN
+F 2 "BAT_1049P" H 3650 3100 50  0001 C CNN
+F 3 "" H 3650 3100 50  0001 C CNN
+	1    3550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0112
+U 1 1 5BD2465E
+P 3400 3450
+F 0 "#PWR0112" H 3400 3200 50  0001 C CNN
+F 1 "GND" H 3400 3300 50  0000 C CNN
+F 2 "" H 3400 3450 50  0000 C CNN
+F 3 "" H 3400 3450 50  0000 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0113
+U 1 1 5BD246AF
+P 3700 3450
+F 0 "#PWR0113" H 3700 3200 50  0001 C CNN
+F 1 "GND" H 3700 3300 50  0000 C CNN
+F 2 "" H 3700 3450 50  0000 C CNN
+F 3 "" H 3700 3450 50  0000 C CNN
+	1    3700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3450 3700 3400
+Wire Wire Line
+	3400 3450 3400 3400
+Wire Wire Line
+	4250 3550 4250 3150
+Wire Wire Line
+	4250 3150 3700 3150
+Connection ~ 4250 3550
+Wire Wire Line
+	3400 3150 3400 1900
+Wire Wire Line
+	3400 1900 4250 1900
+Connection ~ 4250 1900
+Text GLabel 3400 1850 1    50   Input ~ 0
+BAT1
+Text GLabel 3700 3050 1    50   Input ~ 0
+BAT2
+Wire Wire Line
+	3700 3150 3700 3050
+Connection ~ 3700 3150
+Wire Wire Line
+	3400 1900 3400 1850
+Connection ~ 3400 1900
+Text GLabel 6050 2800 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	6050 2800 6000 2800
+Connection ~ 6000 2800
+Wire Wire Line
+	6000 2800 6000 1900
+$Comp
+L tinkerforge:CONN_2 K102
+U 1 1 5BD2E191
+P 6500 3900
+F 0 "K102" H 6627 3928 50  0000 L CNN
+F 1 "NTC" H 6627 3844 40  0000 L CNN
+F 2 "kicad-libraries:Pin_Header_Straight_1x04_127" H 6500 3900 60  0001 C CNN
+F 3 "" H 6500 3900 60  0000 C CNN
+	1    6500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinkerforge:GND #PWR0114
+U 1 1 5BD2E3A2
+P 6150 4050
+F 0 "#PWR0114" H 6150 3800 50  0001 C CNN
+F 1 "GND" H 6150 3900 50  0000 C CNN
+F 2 "" H 6150 4050 50  0000 C CNN
+F 3 "" H 6150 4050 50  0000 C CNN
+	1    6150 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3200 6050 3200
+Wire Wire Line
+	6050 3200 6050 3800
+Wire Wire Line
+	6050 3800 6150 3800
+Wire Wire Line
+	6150 4050 6150 4000
+Text Notes 4400 7450 0    39   ~ 0
+Copyright Tinkerforge GmbH 2018.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions
+$EndSCHEMATC
