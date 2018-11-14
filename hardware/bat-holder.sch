@@ -371,4 +371,6 @@ $EndComp
 Wire Wire Line
 	5800 3650 5700 3650
 Connection ~ 5700 3650
+Text Notes 4950 4650 0    50   ~ 0
+AP9211XX-AD-HAC-7 (0.12V Discharge Current)
 $EndSCHEMATC
