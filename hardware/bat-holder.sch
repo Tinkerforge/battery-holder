@@ -371,14 +371,7 @@ Connection ~ 2900 3650
 Wire Wire Line
 	3200 3350 3100 3350
 Wire Wire Line
-	3200 1900 3950 1900
-Connection ~ 3200 1900
-Wire Wire Line
-	3200 3350 3950 3350
-Wire Wire Line
 	3950 3350 3950 1900
-Connection ~ 3200 3350
-Connection ~ 3950 1900
 Wire Wire Line
 	3950 1900 6550 1900
 Wire Wire Line
@@ -429,4 +422,51 @@ Connection ~ 1000 1900
 Wire Wire Line
 	1300 2050 1300 1800
 Connection ~ 1300 2050
+$Comp
+L tinkerforge:Rs R107
+U 1 1 5BF82CC3
+P 3550 1900
+F 0 "R107" V 3500 1900 25  0000 C CNN
+F 1 "0" V 3550 1900 25  0000 C CNN
+F 2 "R1206" H 3550 1900 60  0001 C CNN
+F 3 "" H 3550 1900 60  0000 C CNN
+	1    3550 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tinkerforge:Rs R108
+U 1 1 5BF82D63
+P 3550 3350
+F 0 "R108" V 3500 3350 25  0000 C CNN
+F 1 "0" V 3550 3350 25  0000 C CNN
+F 2 "R1206" H 3550 3350 60  0001 C CNN
+F 3 "" H 3550 3350 60  0000 C CNN
+	1    3550 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 3350 3350 3350
+Connection ~ 3200 3350
+Wire Wire Line
+	3650 3350 3950 3350
+Wire Wire Line
+	3950 1900 3650 1900
+Connection ~ 3950 1900
+Wire Wire Line
+	3450 1900 3350 1900
+Connection ~ 3200 1900
+Text GLabel 3350 1800 1    50   Input ~ 0
+OUT1
+Text GLabel 3350 3250 1    50   Input ~ 0
+OUT2
+Wire Wire Line
+	3350 3350 3350 3250
+Connection ~ 3350 3350
+Wire Wire Line
+	3350 3350 3200 3350
+Wire Wire Line
+	3350 1900 3350 1800
+Connection ~ 3350 1900
+Wire Wire Line
+	3350 1900 3200 1900
 $EndSCHEMATC
