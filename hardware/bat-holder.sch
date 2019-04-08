@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bat-holder-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -125,22 +124,6 @@ Wire Wire Line
 	5650 2150 5650 2450
 Text GLabel 5850 2300 2    50   Input ~ 0
 EP1
-Wire Wire Line
-	5550 2300 5750 2300
-$Comp
-L tinkerforge:CONN_01X01 P104
-U 1 1 5BED0BF5
-P 5750 2100
-F 0 "P104" V 5715 2012 50  0000 R CNN
-F 1 "C" V 5624 2012 50  0000 R CNN
-F 2 "TSTPT" V 5578 2012 50  0001 R CNN
-F 3 "" H 5750 2100 50  0000 C CNN
-	1    5750 2100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5750 2300 5850 2300
-Connection ~ 5750 2300
 Text Notes 4050 1700 0    50   ~ 0
 AP9211XX-AD-HAC-7 \nOvercharge Detection 4.375V \nOver Discharge Detection 2.5V\nDischarge Current Detection 0.12V+27mOhm=4.44A
 Wire Wire Line
@@ -1236,12 +1219,12 @@ $EndComp
 $Comp
 L tinkerforge:+5V #PWR0123
 U 1 1 5C7D5C9A
-P 5250 4000
-F 0 "#PWR0123" H 5250 3850 50  0001 C CNN
-F 1 "+5V" H 5265 4173 50  0000 C CNN
-F 2 "" H 5250 4000 50  0000 C CNN
-F 3 "" H 5250 4000 50  0000 C CNN
-	1    5250 4000
+P 4850 4000
+F 0 "#PWR0123" H 4850 3850 50  0001 C CNN
+F 1 "+5V" H 4865 4173 50  0000 C CNN
+F 2 "" H 4850 4000 50  0000 C CNN
+F 3 "" H 4850 4000 50  0000 C CNN
+	1    4850 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1356,4 +1339,19 @@ Wire Wire Line
 Wire Wire Line
 	3000 5000 3400 5000
 NoConn ~ 2050 7500
+$Comp
+L tinkerforge:Rs R1
+U 1 1 5CAC9535
+P 5150 4000
+F 0 "R1" V 5004 4000 31  0000 C CNN
+F 1 "0" V 5066 4000 31  0000 C CNN
+F 2 "kicad-libraries:R0603F" V 5044 4000 60  0001 C CNN
+F 3 "" H 5150 4000 60  0000 C CNN
+	1    5150 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4000 5050 4000
+Wire Wire Line
+	5550 2300 5850 2300
 $EndSCHEMATC
